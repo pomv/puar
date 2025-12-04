@@ -1,11 +1,16 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import '../app.css';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<title>Puar</title>
+	<link
+		rel="icon"
+		href="
+https://emojicdn.elk.sh/🫐"
+	/>
 </svelte:head>
 
 {@render children()}
