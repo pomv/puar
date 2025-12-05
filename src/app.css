@@ -1,9 +1,44 @@
-body {
-	background-color: #dce5f6;
-	color: #587092;
-	margin-top: 34vh;
+:root {
+	--bg: #f3f9fc;
+	--title: #1b3c62;
+	--text: #58708a;
 }
 
-* {
-	text-align: center;
+::selection {
+	background-color: #c6ecff;
+	color: #0f161f;
+}
+
+body {
+	font-family: 'PyeojinGothic';
+	background-color: var(--bg);
+	color: var(--title);
+	margin-top: 4vh;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#test {
+	font-size: 1rem;
+	color: var(--text);
+	text-align: left;
+	margin-top: 20px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'PyeojinGothic';
+	src: url('/fonts/PyeojinGothic-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'PyeojinGothic';
+	src: url('/fonts/PyeojinGothic-SemiBold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
